@@ -9,4 +9,4 @@ Write-Output $accessToken.access_token
 
 
 $resource= "?resource=https://management.azure.com/" 
-$url = $env:IDENTITY_ENDPOINT + $resource 
+
