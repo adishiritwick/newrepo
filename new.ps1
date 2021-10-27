@@ -9,3 +9,7 @@ Write-Output $accessToken.access_token
 $resource= "?resource=https://management.azure.com/" 
 $resource= "?resource=https://management.azure.com/" 
 $resource= "?resource=https://management.azure.com/" 
+$resource= "?resource=https://management.azure.com/" 
+$resource= "?resource=https://management.azure.com/" 
+$resource= "?resource=https://management.azure.com/" 
+
