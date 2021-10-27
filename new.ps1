@@ -17,15 +17,12 @@ $resource= "?resource=https://management.azure.com/"
 $resource= "?resource=https://management.azure.com/" 
 $resource= "?resource=https://management.azure.com/" 
 $resource= "?resource=https://management.azure.com/" 
-$resource= "?resource=https://management.azure.com/" 
-$resource= "?resource=https://management.azure.com/" 
 
 
-$resource= "?resource=https://management.azure.com/" 
-$resource= "?resource=https://management.azure.com/" 
-$resource= "?resource=https://management.azure.com/" 
-$resource= "?resource=https://management.azure.com/" 
-$resource= "?resource=https://management.azure.com/" 
-$resource= "?resource=https://management.azure.com/" 
-$resource= "?resource=https://management.azure.com/" 
+
+
+
+
+
+
 $resource= "?resource=https://management.azure.com/" 
