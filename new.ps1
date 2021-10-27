@@ -7,4 +7,5 @@ $accessToken = Invoke-RestMethod -Uri $url -Method 'GET' -Headers $Headers
 Write-Output $accessToken.access_token
 
 $resource= "?resource=https://management.azure.com/" 
-
+$resource= "?resource=https://management.azure.com/" 
+$resource= "?resource=https://management.azure.com/" 
