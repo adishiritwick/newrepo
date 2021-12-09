@@ -1,27 +1,4 @@
-<#
-.History
-   15/09/2020 - 1.0 - Initial release - Gaya Premachandra
-.Objective
-   Start/Pause/Restart Azure Synapse Analytics SQL Pool
-.DESCRIPTION
-    This script starts/pauses or restarts an Azure Synapse Analytics SQL Pool
-    Pre-requirements:
-                    AzModule ----> Install-Module -Name Az.Synapse
-                    Be connected to Azure ----> Connect-AzAccount 
-    Module descriptions are in https://docs.microsoft.com/en-us/powershell/module/az.sql/?view=azps-4.6.1
-.PARAMETERS 
--	ResourceGroupName: resource group name where the server is being hosted
--	ServerName server name that needs to be restarted
--	DatabaseName: database name that needs to be restarted
--	Operation: it needs to be Start/Pause or Restart
-Operation parameter values:
-                            Pause
-                            Start
-                            Restart
-.EXAMPLE
-   Restart-AzSynapseSQLPool -ResourceGroupName "" -ServerName "" -DatabaseName "" -Operation ""
-   
-#>
+
 
 [CmdletBinding()]
 param (
