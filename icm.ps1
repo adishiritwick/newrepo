@@ -57,7 +57,8 @@ Begin
     Write-Output "Starting process on $(Get-Date)"
 
     Try{
-        $Status = Get-AzSqlDatabase –ResourceGroupName $ResourceGroupName –ServerName $ServerName –DatabaseName $DatabaseName | Select-Object Status | Format-Table -HideTableHeaders | Out-String 
+    
+        $Status = Get-AzSqlDatabase –ResourceGroupName $ResourceGroupName –ServerName $ServerName -DatabaseName $DatabaseName | Select-Object Status | Format-Table -HideTableHeaders | Out-String 
         $Status = $Status -replace "`t|`n|`r",""
         Write-Output "The current status is "$Status.trim()" on $(Get-Date)" 
     }
@@ -76,7 +77,7 @@ Begin
                      try 
                     {  
                         Write-Output "Starting on $(Get-Date)"
-                         Get-AzSqlDatabase –ResourceGroupName $ResourceGroupName –ServerName $ServerName –DatabaseName $DatabaseName | Resume-AzSqlDatabase
+                         Get-AzSqlDatabase –ResourceGroupName $ResourceGroupName –ServerName $ServerName -DatabaseName $DatabaseName | Resume-AzSqlDatabase
                     }
                     catch
                     {
@@ -92,7 +93,7 @@ Begin
                       try 
                     {  
                         Write-Output "Pausing on $(Get-Date)"
-                        Get-AzSqlDatabase –ResourceGroupName $ResourceGroupName –ServerName $ServerName –DatabaseName $DatabaseName | Suspend-AzSqlDatabase
+                        Get-AzSqlDatabase –ResourceGroupName $ResourceGroupName –ServerName $ServerName -DatabaseName $DatabaseName | Suspend-AzSqlDatabase
                     }
                     catch
                     {
@@ -108,10 +109,10 @@ Begin
                     try 
                     {  
                         Write-Output "Pausing on $(Get-Date)"
-                        Get-AzSqlDatabase –ResourceGroupName $ResourceGroupName –ServerName $ServerName –DatabaseName $DatabaseName | Suspend-AzSqlDatabase
+                        Get-AzSqlDatabase –ResourceGroupName $ResourceGroupName –ServerName $ServerName -DatabaseName $DatabaseName | Suspend-AzSqlDatabase
 
                         Write-Output "Starting on $(Get-Date)"
-                        Get-AzSqlDatabase –ResourceGroupName $ResourceGroupName –ServerName $ServerName –DatabaseName $DatabaseName | Resume-AzSqlDatabase
+                        Get-AzSqlDatabase –ResourceGroupName $ResourceGroupName –ServerName $ServerName -DatabaseName $DatabaseName | Resume-AzSqlDatabase
                     }
                     catch
                     {
