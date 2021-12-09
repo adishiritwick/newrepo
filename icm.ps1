@@ -13,15 +13,7 @@
 -	ResourceGroupName: resource group name where the server is being hosted
 -	ServerName server name that needs to be restarted
 -	DatabaseName: database name that needs to be restarted
--	Operation: it needs to be Start/Pause or Restart
-Operation parameter values:
-                            Pause
-                            Start
-                            Restart
-.EXAMPLE
-   Restart-AzSynapseSQLPool -ResourceGroupName "" -ServerName "" -DatabaseName "" -Operation ""
-   
-#>
+-	Operation: it needs to be Start/Pause or Restart#>
 
 [CmdletBinding()]
 param (
