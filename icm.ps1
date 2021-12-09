@@ -1,9 +1,4 @@
 <#
-.History
-   15/09/2020 - 1.0 - Initial release - Gaya Premachandra
-.Objective
-   Start/Pause/Restart Azure Synapse Analytics SQL Pool
-.DESCRIPTION
     This script starts/pauses or restarts an Azure Synapse Analytics SQL Pool
     Pre-requirements:
                     AzModule ----> Install-Module -Name Az.Synapse
