@@ -80,7 +80,7 @@ Begin
     Write-Output "Starting process on $(Get-Date)"
 
     Try{
-        $Status = Get-AzSqlDatabase –ResourceGroupName $ResourceGroupName –ServerName $ServerName –DatabaseName $DatabaseName | Select-Object Status | Format-Table -HideTableHeaders | Out-String 
+        $Status = Get-AzSqlDatabase –ResourceGroupName $ResourceGroupName –DatabaseName $DatabaseName | Select-Object Status | Format-Table -HideTableHeaders | Out-String 
         $Status = $Status -replace "`t|`n|`r",""
         Write-Output "The current status is "$Status.trim()" on $(Get-Date)" 
     }
