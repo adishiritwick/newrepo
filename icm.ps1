@@ -9,8 +9,7 @@
                     AzModule ----> Install-Module -Name Az.Synapse
                     Be connected to Azure ----> Connect-AzAccount 
     Module descriptions are in https://docs.microsoft.com/en-us/powershell/module/az.sql/?view=azps-4.6.1
-.PARAMETERS 
--	ResourceGroupName: resource group name where the server is being hosted
+is being hosted
 -	ServerName server name that needs to be restarted
 -	DatabaseName: database name that needs to be restarted
 -	Operation: it needs to be Start/Pause or Restart#>
