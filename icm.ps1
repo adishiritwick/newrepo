@@ -42,7 +42,7 @@ Begin
             throw $ErrorMessage
         } else{
             Write-Output -Message $_.Exception
-            throw $_.Exception
+           
         }
     }
     
