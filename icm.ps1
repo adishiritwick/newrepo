@@ -3,8 +3,7 @@
     Pre-requirements:
                     AzModule ----> Install-Module -Name Az.Synapse
         
--	ServerName server name that needs to be restarted
--	DatabaseName: database name that needs to be restarted
+-	Serv
 -	Operation: it needs to be Start/Pause or Restart#>
 
 [CmdletBinding()]
