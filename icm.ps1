@@ -132,9 +132,6 @@ Begin
                     {  
                         Write-Output "Pausing on $(Get-Date)"
                         Get-AzSqlDatabase –ResourceGroupName $ResourceGroupName –ServerName $ServerName –DatabaseName $DatabaseName | Suspend-AzSqlDatabase
-
-                        Write-Output "Starting on $(Get-Date)"
-                        Get-AzSqlDatabase –ResourceGroupName $ResourceGroupName –ServerName $ServerName –DatabaseName $DatabaseName | Resume-AzSqlDatabase
                     }
                     catch
                     {
