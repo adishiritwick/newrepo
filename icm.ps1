@@ -1,7 +1,6 @@
 <#
     This script starts/pauses or restarts an Azure Synapse Analytics SQL Pool
     Pre-requirements:
-                    AzModule ----> Install-Module -Name Az.Synapse
         
 -	Serv
 -	Operation: it needs to be Start/Pause or Restart#>
