@@ -42,8 +42,7 @@ param (
 
 Begin
     {     
-    Write-Output "Connecting on $(Get-Date)"
-
+   
     #######################################################################
     # If you are using an Automation Account, uncomment the following lines 
     #######################################################################
