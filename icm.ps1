@@ -1,6 +1,6 @@
 <#
     This script starts/pauses or restarts an Azure Synapse Analytics SQL Pool
-    Pre-requirements:
+    P
         
 -	Serv
 -	Operation: it needs to be Start/Pause or Restart#>
